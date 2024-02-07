@@ -1,5 +1,9 @@
 package com.ipartek.repository;
 
-public interface ViajeRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ipartek.model.Viaje;
+
+public interface ViajeRepository extends JpaRepository<Viaje, Integer>{
 
 }

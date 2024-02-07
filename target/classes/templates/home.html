@@ -20,7 +20,23 @@
 
 	<main>
 		<section>
-			AGENCIA VIAJES
+			 <table border="1">
+				<thead>
+				<p class="titulo_tabla">VIAJES OFERTADOS</p>
+				<tr>
+					<th>ID</th>
+					<th>CIUDAD</th>
+					<th>PRECIO</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr th:each="viaje : ${atr_lista_viajes}">
+						<td th:text="${viaje.id}"></td>
+						<td th:text="${viaje.nombre}"></td>
+						<td th:text="${viaje.precio}"></td>
+					</tr>
+				</tbody>
+			</table>
 		</section>
 	</main>
 
