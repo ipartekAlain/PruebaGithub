@@ -8,6 +8,9 @@
 ##autores##
 Alain
 Cecilia
+esther
+esto es un pequeño texto introductorio
+
 
 ##descripcion del proyecto##
 hacer mañana
