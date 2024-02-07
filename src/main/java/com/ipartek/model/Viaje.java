@@ -37,11 +37,11 @@ public class Viaje {
 	/**
 	 * Atributo Nombre: describimos lo que tiene el atributo nombre
 	 */
-	@Column(name="id")
+	@Column(name="nombre")
 	private String nombre;
 	
 	
-	@Column(name="id")
+	@Column(name="precio")
 	private int precio;
 
 
