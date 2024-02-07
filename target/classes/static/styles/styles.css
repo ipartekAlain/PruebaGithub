@@ -1,0 +1,154 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+:root {
+	--primary_color: #74C69D;
+	--primary_color_dark: #40916C;
+	--primary_color_light: #95D5B2;
+	--primary_color_darker: #1B4332;
+	--primary_color_lighter: #B7E4C7;
+	--white: #D8F3DC;
+	
+	--general_padding: 20px;
+	
+	--header_height: 80px;
+	--nav_height: 50px;
+	--footer_height: 50px;
+}
+
+/*CABECERA*/
+header {
+	background-color: var(--primary_color);
+	height: var(--header_height);
+	padding-left: var(--general_padding);
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+}
+
+#header_title {
+	color: var(--primary_color_dark);
+	padding-left: var(--general_padding);
+}
+
+
+nav {
+	background-color: var(--primary_color_light);
+	height: var(--nav_height);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	
+	
+}
+
+nav ul{
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+nav ul li {
+	padding-left: var(--general_padding);
+	padding-right: var(--general_padding);
+	list-style: none;
+	
+	height: var(--nav_height);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--primary_color_dark);
+	font-weight: bold;
+	
+}
+
+nav ul li:hover {
+  background-color: var(--primary_color)
+}
+
+/*BODY*/
+main {
+	min-height: calc(100vh - (var(--header_height) + var(--footer_height) + calc(2.5 * var(--general_padding))));	
+	background-color: var(--white);
+	padding: var(--general_padding);
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.panel_tabla {
+	padding: var(--general_padding);
+	background-color: var(--primary_color_lighter);
+	border-radius: 6px;
+	width: 600px;
+}
+
+table {
+	width: 100%;
+	background-color: var(--primary_color);
+}
+
+.titulo_tabla {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bolder;
+	color: var(--primary_color_dark);
+}
+
+thead, tbody {
+	text-align: center;
+}
+
+th, td {
+  padding: 12px;
+  color: var(--primary_color_dark);
+}
+
+td {
+	font-size: bold;
+}
+
+/* Estilo alternado para filas */
+tr:nth-child(even) {
+  background-color: var(--primary_color_light);
+}
+
+ /*Estilo al pasar el ratón por encima de una fila */
+tr:hover {
+  background-color: var(--primary_color_lighter);
+}
+
+/* Estilo para la primera fila (encabezado) */
+th {
+  background-color:var(--primary_color_light);
+  color: var(--primary_color_dark);
+}
+
+/*FOOTER*/
+footer {
+	height: var(--footer_height);
+	background-color: var(--primary_color);
+	padding: var(--general_padding);
+	color: var(--primary_color_dark);
+	font-weight: bolder;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
